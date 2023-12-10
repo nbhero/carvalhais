@@ -1,0 +1,56 @@
+:root {
+    /* Colors for the Website */
+    --primary-color: #293039;
+    --secondary-color: #feff7c;
+    --third-color: #fafafa;
+    /* Font Config */
+    /* Header */
+    --header-font: Bitter, serif;
+    --header-size: 40px;
+    --header-text-transform: uppercase;
+    --header-letter-spacing: 6px;
+    /* Paragraph */
+    --paragraph-font: Lato, sans-serif;
+}
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    #main-page {
+        display: block;
+    }
+    .slideshow-container {
+        position: relative;
+        margin: 0 auto;
+        grid-column: 2/3;
+        grid-row: 1/5;
+    }
+    .mySlides {
+        width: 100%;
+    }
+    .social {
+        margin-bottom: 20px;
+    }
+    .aboutus {
+        display: inline-block;
+        margin: 50px 0 50px 0;
+        margin-left: 20px;
+    }
+    .aboutus-links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 598px) {
+    #main-page {
+        display: inline-block;
+    }
+    .slideshow-container img {
+        max-height: 400px;
+        max-width: 60rem;
+    }
+}
