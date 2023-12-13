@@ -1,0 +1,73 @@
+/* Importing Stuff */
+/* Lato Font: Light 300 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto+Slab&display=swap');
+/* Bitter Font: Bold 700 */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lato:wght@300&family=Oswald:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto+Slab&display=swap');
+:root {
+    /* Colors for the Website */
+    --primary-color: #293039;
+    --secondary-color: #feff7c;
+    --third-color: #fafafa;
+    /* Font Config */
+    /* Header */
+    --header-font: Bitter, serif;
+    --header-size: 40px;
+    --header-text-transform: uppercase;
+    --header-letter-spacing: 6px;
+    /* Paragraph */
+    --paragraph-font: Lato, sans-serif;
+}
+*{
+    margin: 10px;
+}
+body {
+    background-color: var(--primary-color);
+}
+.colaboradores-container {
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.colaborador1 {
+    grid-area: 1/1/2/2;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid blue;
+    border-radius: 6px;
+    align-self: center;
+    text-align: start;
+    justify-self: center;
+}
+.colaborador1 img {
+    width: 250px;
+}
+
+.colaborador2 {
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid blue;
+    align-self: center;
+    justify-self: center;
+    text-align: start;
+}
+.colaborador2 img {
+    width: 250px;
+}
+
+/* Colaborador Info */
+.colaborador-info h2 {
+    font-family: var(--header-font);
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+.colaborador-info p {
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+    color: var(--third-color);
+}

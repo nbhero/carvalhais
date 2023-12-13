@@ -12,7 +12,7 @@
     /* Paragraph */
     --paragraph-font: Lato, sans-serif;
 }
-@media only screen and (min-width: 599px) and (max-width: 767px) {
+@media only screen and (min-width: 599px) and (max-width: 768px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -23,8 +23,12 @@
     .slideshow-container {
         position: relative;
         margin: 0 auto;
-        grid-column: 2/3;
-        grid-row: 1/5;
+        text-align: center;
+    }
+    .numbertext {
+        position: absolute;
+        top: 0;
+        left: 30px;
     }
     .mySlides {
         width: 100%;
