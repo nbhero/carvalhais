@@ -20,11 +20,8 @@
 
 body {
     background-color: var(--primary-color);
-    margin: 30px;
 }
 .colaboradores-container {
-    border: 2px solid red;
-    border-radius: 4px;
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -35,7 +32,7 @@ body {
     grid-area: 1/1/2/2;
     display: flex;
     flex-direction: row;
-    border: 2px solid blue;
+    border: 2px solid var(--third-color);
     border-radius: 6px;
     align-self: center;
     text-align: start;
@@ -43,19 +40,26 @@ body {
 }
 .colaborador1 img {
     width: 250px;
+    border-radius: 25px;
+    padding: 10px;
 }
-
+.colaborador1 p {
+    font-family: var(--paragraph-font);
+}
 .colaborador2 {
     grid-area: 2/2/3/3;
     display: flex;
     flex-direction: row;
-    border: 2px solid blue;
+    border: 2px solid var(--third-color);
+    border-radius: 6px;
     align-self: center;
     justify-self: center;
     text-align: start;
 }
 .colaborador2 img {
     width: 250px;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 /* Colaborador Info */
@@ -73,14 +77,52 @@ body {
 
 .home-button {
     margin-bottom: 20px;
+    background-color: rgb(28, 39, 39);
+    padding: 40px;
 }
 .home-button a {
     color: var(--third-color);
     font-family: var(--header-font);
     font-size: 22px;
     text-decoration: none;
+    text-align: center;
+}
+.home-button a:hover {
+    color: var(--secondary-color);
+    transition: 1.2s;
+}
+.home-button i {
+    padding-right: 8px;
 }
 .home-button img {
     padding-right: 10px;
     width: 12px;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(28, 39, 39);
+}
+footer p{
+    margin-left: 20px;
+    align-self: center;
+    color: var(--third-color);
+    font-size: 22px;
+    font-family: var(--header-font);
+    user-select: none;
+    grid-column: 1/3;
+}
+.subpage-social {
+    grid-column: 5/6;
+    margin-top: 20px;
+}
+.subpage-social a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+.subpage-social div {
+    margin-bottom: 10px;
+}
+.subpage-social img {
+    width: 20px;
 }
