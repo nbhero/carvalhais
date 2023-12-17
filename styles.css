@@ -40,6 +40,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--primary-color);
+}
 /* Grid Alignment */
 #main-page {
     display: grid;
